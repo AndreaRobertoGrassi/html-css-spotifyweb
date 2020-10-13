@@ -20,14 +20,24 @@ aside{
   flex-direction: column;
 }
 #upgrade-bar{
-  width: calc(100% - 200px);
+  width: calc(100vw - 200px);
   height: 70px;
-  background-color: #01011d;
+  background-color: rgba(0, 4, 20, 0.6);
   padding-right: 15px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 #page{
-  background-color: #001130;
-  flex-grow: 1;
+  background-color: #152645;
+  padding-top: 90px;
+  color: white;
+  height: 100%;
+  width: calc(100% - 200px);
+  overflow: auto;
 }
 footer{
   height: 100px;
@@ -35,24 +45,39 @@ footer{
   background-color: grey;
   position: fixed;
   z-index:999;
+  bottom: 0;
 }
 
 /* CONTAINER */
 /* aside */
+/* logo */
+#container .logo{
+  margin-bottom: 10px;
+}
 #container aside img{
   width: 120px;
 }
-#container aside li{
+/* lista */
+#container aside .menu li{
   list-style: none;
-  margin: 10px 0;
+  margin: 8px 0;
 }
-#container aside a{
+#container aside .menu li img{
+  width: 15px;
+  height: auto;
+  margin-right: 10px;
+}
+#container aside .menu a{
   text-decoration: none;
   color: #b6b5b5;
+  display: flex;
+  align-items: center;
 }
+/* div playlist */
 #container aside .playlist{
   margin: 20px 0;
 }
+/* form */
 #container aside form{
   margin: 20px 0;
 }
@@ -70,6 +95,21 @@ footer{
 #container aside form button{
   border: 0;
 }
+/* lista */
+#container .lista-nomi{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#container aside .lista-nomi li{
+  list-style: none;
+  margin: 8px 0;
+}
+#container aside .lista-nomi a{
+  text-decoration: none;
+  color: #b6b5b5;
+}
+/* div app */
 #container aside .app{
   position: fixed;
   width: calc(200px - 30px);
@@ -81,13 +121,21 @@ footer{
 #container aside .app hr{
   margin: 10px 0;
 }
-
-/* UPGRADE-BAR */
-#upgrade-bar{
+#container aside .app a{
+  text-decoration: none;
+  color: #b6b5b5;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
 }
+#container aside .app img{
+  width: 15px;
+  height: auto;
+  margin-right: 10px;
+}
+
+
+
+/* UPGRADE-BAR */
 #upgrade-bar a{
   text-decoration: none;
   padding: 10px;
@@ -96,22 +144,72 @@ footer{
   color: white;
 }
 
+
+
 /* PAGE */
-#page{
+/* regole generali */
+#page .recenti,.john-doe,.popolari{
+  padding: 20px;
 }
-#page ul{
+#page h1{
+  width: 100%;
+  margin-bottom: 10px;
+}
+#page .descrizione{
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #b6b5b5;
+}
+#page .contentuto{
+  width: calc(100% / 6 - 20px);
+  text-align: center;
+  margin-right: 20px;
+}
+#page .contentuto img{
+  width: 100%;
+  height: auto;
+}
+#page .contentuto .titolo{
+  margin:10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#page .contentuto .subtitle{
+  font-size: 12px;
+  color: #b6b5b5;
+}
+/* lista */
+#page .menu{
   width: 50%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   font-size: 10px;
+  margin-bottom: 20px;
 }
-#page li{
+#page .menu li{
   list-style: none;
-  margin: 10px 0;
 }
-#page li a{
+#page .menu li a{
   text-decoration: none;
   color: #b6b5b5;
-
+}
+/* div recenti */
+#page .recenti{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* div john-doe */
+#page .john-doe{
+  display: flex;
+  flex-wrap: wrap;
+}
+#page .popolari{
+  display: flex;
+  flex-wrap: wrap;
+}
+#page .popolari img{
+  border-radius: 50%;
 }
