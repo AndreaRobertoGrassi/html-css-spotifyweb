@@ -1,0 +1,36 @@
+/* REGOLE GENERALI */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container{
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+#play-bar{
+  height: 100px;
+  background-color: grey;
+}
+aside{
+  width: 200px;
+  height: 100%;
+  background-color: black;
+  padding: 15px 0 10px 15px;
+}
+#upgrade-bar{
+  width: calc(100% - 200px);
+  height: 50px;
+  background-color: blue;
+}
+#page{
+  background-color: yellow;
+  flex-grow: 1;
+}
+/* CONTAINER */
+/* aside */
+#container aside img{
+  width: 120px;
+}
