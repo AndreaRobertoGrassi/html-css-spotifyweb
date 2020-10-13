@@ -3,28 +3,81 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div id="container">
 
       <aside>
-        <a href="#"> <img src="img/logo.svg" alt=""> </a>
+        <div class="logo">
+          <a href="#"><img src="img/logo.svg" alt=""></a>
+        </div>
+
+        <ul>
+          <a href="#"><li><i class="fas fa-home"></i> Home </li></a>
+          <a href="#"><li><i class="fas fa-search"></i> Cerca </li></a>
+          <a href="#"><li>&vert;&vert;&bsol; Libreria </li></a>
+        </ul>
+
+        <div class="playlist">
+          <h4>PLAYLIST</h4>
+
+          <form action="index.html" method="post">
+            <button type="button" name="button"><span id="plus">&plus;</span><span class="text">Crea playlist</span></button>
+          </form>
+
+          <ul>
+            <a href="#"><li>Nome playlist</li></a>
+            <a href="#"><li>Nome playlist</li></a>
+            <a href="#"><li>Nome playlist</li></a>
+            <a href="#"><li>Nome playlist</li></a>
+            <a href="#"><li>Nome playlist</li></a>
+            <a href="#"><li>Nome playlist</li></a>
+          </ul>
+
+          <div class="app">
+            <div class="download">
+              <a href="#"><i class="far fa-arrow-alt-circle-down"></i> Installa app</a>
+            </div>
+            <hr>
+            <div class="profile">
+              <a href="#"><i class="far fa-user-circle"></i> John Doe</a>
+            </div>
+          </div>
+
+        </div>
+
+
       </aside>
 
       <section id="upgrade-bar">
-        <a href="#"></a>
+        <a href="#">EFFETTUA L&apos;UPGRADE</a>
       </section>
 
       <section id="page">
+        <ul>
+          <li> <a href="#">IN EVIDENZA</a> </li>
+          <li> <a href="#">PODCAST</a> </li>
+          <li> <a href="#">CLASSIFICHE</a> </li>
+          <li> <a href="#">GENERI E MOOD</a> </li>
+          <li> <a href="#">NUOVE USCITE</a> </li>
+          <li> <a href="#">SCOPRI</a> </li>
+        </ul>
+        <div class="recently">
 
+        </div>
+        <div class="">
+
+        </div>
+        <div class="">
+
+        </div>
       </section>
 
     </div>
 
-    <div id="play-bar">
-
-    </div>
+    <footer></footer>
 
   </body>
 </html>
