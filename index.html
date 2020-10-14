@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
 
-    <aside>
+    <section id="left-bar">
       <div class="logo">
         <a href="#"><img src="img/logo.svg" alt=""></a>
       </div>
@@ -48,15 +49,15 @@
 
       </div>
 
+    </section>
 
-    </aside>
 
     <section id="upgrade-bar">
       <a href="#">EFFETTUA L&apos;UPGRADE</a>
     </section>
 
 
-    <section id="page">
+    <section id="container">
 
         <ul class="menu">
           <li> <a href="#">IN EVIDENZA</a> </li>
@@ -70,7 +71,7 @@
         <div class="recenti">
           <h1>Recently played</h1>
 
-          <div class="contentuto">
+          <div class="contentuto margin">
             <div class="img">
               <img src="img/metal_lifting.jpg" alt="">
             </div>
@@ -83,7 +84,7 @@
             <a class="play" href="#"><i class="far fa-play-circle"></i></a>
           </div>
 
-          <div class="contentuto">
+          <div class="contentuto margin">
             <div class="img">
               <img src="img/stranger.jpeg" alt="">
             </div>
@@ -96,7 +97,7 @@
             <a class="play" href="#"><i class="far fa-play-circle"></i></a>
           </div>
 
-          <div class="contentuto">
+          <div class="contentuto margin">
             <div class="img">
               <img src="img/aquietplace.jpeg" alt="">
             </div>
@@ -109,7 +110,7 @@
             <a class="play" href="#"><i class="far fa-play-circle"></i></a>
           </div>
 
-          <div class="contentuto">
+          <div class="contentuto margin">
             <div class="img">
               <img src="img/split.jpeg" alt="">
             </div>
@@ -222,16 +223,16 @@
       </section>
 
 
-    <footer>
+    <section id="media-player">
       <div class="brano">
         <div class="img">
           <img src="img/sinister.jpeg" alt="">
         </div>
         <a class="titolo-brano"href="#">Sinister <br><span>Brano Nome</span></a>
-        <div class="icone-brano">
-          <i class="far fa-heart"></i>
-          <i class="far fa-folder"></i>
-        </div>
+        <form class="icone-brano">
+        <button type="button" name="button"><i class="far fa-heart"></i></button>
+        <button type="button" name="button"><i class="far fa-folder"></i></button>
+        </form>
       </div>
 
       <div class="control-music">
@@ -257,7 +258,7 @@
         <form class="icone-utility">
           <button type="button" name="button"><i class="fas fa-bars"></i></button>
           <button type="button" name="button"><i class="fas fa-tv"></i></button>
-          <button type="button" name="button"><i class="fas fa-volume-up"></i></button>  
+          <button type="button" name="button"><i class="fas fa-volume-up"></i></button>
         </form>
         <div class="linea-utility-white">
 
@@ -266,7 +267,8 @@
 
         </div>
       </div>
-    </footer>
+
+    </section>
 
   </body>
 </html>
