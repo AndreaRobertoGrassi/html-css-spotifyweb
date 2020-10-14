@@ -4,130 +4,101 @@
   padding: 0;
   box-sizing: border-box;
 }
-#container{
-  height: calc(100vh - 100px);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
+/* ASIDE*/
 aside{
   width: 200px;
   height: 100%;
   background-color: black;
   padding: 15px;
   color: #b6b5b5;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 800;
   display: flex;
   flex-direction: column;
 }
-#upgrade-bar{
-  width: calc(100vw - 200px);
-  height: 70px;
-  background-color: rgba(0, 4, 20, 0.6);
-  padding-right: 15px;
-  position: fixed;
-  top: 0;
-  right: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-#page{
-  background-color: #152645;
-  padding-top: 90px;
-  color: white;
-  height: 100%;
-  width: calc(100% - 200px);
-  overflow: auto;
-}
-footer{
-  height: 100px;
-  width: 100vw;
-  background-color: grey;
-  position: fixed;
-  z-index:999;
-  bottom: 0;
-}
-
-/* CONTAINER */
-/* aside */
 /* logo */
-#container .logo{
+aside .logo{
   margin-bottom: 10px;
 }
-#container aside img{
+ aside img{
   width: 120px;
 }
 /* lista */
-#container aside .menu li{
+ aside .menu li{
   list-style: none;
   margin: 8px 0;
 }
-#container aside .menu li img{
+ aside .menu li img{
   width: 15px;
   height: auto;
   margin-right: 10px;
 }
-#container aside .menu a{
+ aside .menu a{
   text-decoration: none;
   color: #b6b5b5;
   display: flex;
   align-items: center;
 }
 /* div playlist */
-#container aside .playlist{
+ aside .playlist{
   margin: 20px 0;
 }
 /* form */
-#container aside form{
+ aside form{
   margin: 20px 0;
 }
-#container aside form #plus{
+aside form button:hover{
+  cursor: pointer;
+}
+ aside form #plus{
   background-color: grey;
   padding: 5px 8px;
   font-size: 15px;
   font-weight: bold;
 }
-#container aside form .text{
+ aside form .text{
   background-color: black;
   color: #b6b5b5;
   padding: 5px;
 }
-#container aside form button{
+aside form button{
   border: 0;
 }
 /* lista */
-#container .lista-nomi{
+aside .lista-nomi{
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-#container aside .lista-nomi li{
+ aside .lista-nomi li{
   list-style: none;
   margin: 8px 0;
 }
-#container aside .lista-nomi a{
+ aside .lista-nomi a{
   text-decoration: none;
   color: #b6b5b5;
 }
 /* div app */
-#container aside .app{
+ aside .app{
   position: fixed;
   width: calc(200px - 30px);
   z-index: 100;
-  bottom: 100px;
+  bottom: 90px;
   background-color: black;
   padding: 10px 0;
 }
-#container aside .app hr{
+ aside .app hr{
   margin: 10px 0;
 }
-#container aside .app a{
+ aside .app a{
   text-decoration: none;
   color: #b6b5b5;
   display: flex;
   align-items: center;
 }
-#container aside .app img{
+ aside .app img{
   width: 15px;
   height: auto;
   margin-right: 10px;
@@ -136,6 +107,19 @@ footer{
 
 
 /* UPGRADE-BAR */
+#upgrade-bar{
+  width: 100%;
+  height: 90px;
+  background-color: rgba(0, 4, 20, 0.6);
+  padding-right: 15px;
+  position: fixed;
+  z-index: 700;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 #upgrade-bar a{
   text-decoration: none;
   padding: 10px;
@@ -145,11 +129,20 @@ footer{
 }
 
 
-
 /* PAGE */
-/* regole generali */
+#page{
+  width: 100%;
+  background-color: #152645;
+  padding: 110px 0 90px 200px;
+  color: white;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
 #page .recenti,.john-doe,.popolari{
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 #page h1{
   width: 100%;
@@ -165,13 +158,14 @@ footer{
   width: calc(100% / 6 - 20px);
   text-align: center;
   margin-right: 20px;
+  position: relative;
 }
 #page .contentuto img{
   width: 100%;
   height: auto;
 }
 #page .contentuto .titolo{
-  margin:10px;
+  margin:10px 0;
   font-size: 14px;
   font-weight: bold;
 }
@@ -179,13 +173,33 @@ footer{
   font-size: 12px;
   color: #b6b5b5;
 }
+#page .play{
+  position: absolute;
+  color: white;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+#page .play:hover i{
+  display: block;
+}
+#page .play i{
+  position: absolute;
+  font-size: 50px;
+  top: 30%;
+  left: 50%;
+  transform: translateX( -50%);
+  display: none;
+}
 /* lista */
 #page .menu{
   width: 50%;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  font-size: 10px;
+  font-size: 12px;
   margin-bottom: 20px;
 }
 #page .menu li{
@@ -195,21 +209,118 @@ footer{
   text-decoration: none;
   color: #b6b5b5;
 }
-/* div recenti */
-#page .recenti{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-/* div john-doe */
-#page .john-doe{
-  display: flex;
-  flex-wrap: wrap;
-}
-#page .popolari{
-  display: flex;
-  flex-wrap: wrap;
-}
+
+/* div popolari */
 #page .popolari img{
   border-radius: 50%;
+}
+
+
+/* FOOTER */
+footer{
+  height: 90px;
+  width: 100%;
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #3c3b3b;
+  position: fixed;
+  z-index:999;
+  bottom: 0;
+}
+footer button{
+  color: white;
+  background-color: inherit;
+  border: 0;
+  cursor: pointer;
+}
+/* div brano */
+footer .brano{
+  display: flex;
+  align-items: center;
+}
+footer .brano .img img{
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+footer .brano .titolo-brano{
+  text-decoration:none;
+  color: white;
+}
+footer .brano .titolo-brano span{
+  color: #b6b5b5;
+}
+footer .brano .titolo-brano span:hover{
+  text-decoration:underline;
+}
+footer .brano .icone-brano{
+  margin-left: 30px;
+}
+footer .brano .icone-brano i{
+  margin-right: 15px;
+  color: #b6b5b5;
+}
+footer .brano .icon-footer i:hover{
+  cursor: pointer;
+  color:white;
+}
+/* div control-music */
+footer .control-music{
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .control-music .icone-control{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 60%;
+  margin: auto;
+}
+footer .control-music .icone-control #play{
+  font-size: 30px;
+}
+footer .control-music .linea-music{
+  display: flex;
+  width: 100%;
+}
+footer .control-music .linea-music-white{
+  width: 30%;
+  height: 3px;
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 5px;
+}
+footer .control-music .linea-music-grey{
+  width: 70%;
+  height: 3px;
+  margin-top: 15px;
+  background-color: #b6b5b5;
+  border-radius: 5px;
+}
+/* div utility */
+footer .utility{
+  display: flex;
+  align-items: center;
+  color: white;
+}
+footer .utility .icone-utility{
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+footer .utility .linea-utility-white{
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: white;
+  margin-left: 20px;
+}
+footer .utility .linea-utility-grey{
+  height: 3px;
+  width: 70px;
+  border-radius: 5px;
+  background-color: #b6b5b5;
 }

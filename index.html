@@ -7,55 +7,56 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div id="container">
 
-      <aside>
-        <div class="logo">
-          <a href="#"><img src="img/logo.svg" alt=""></a>
-        </div>
 
-        <ul class="menu">
-          <li> <a href="#"><img src="img/home.svg" alt=""><span>Home</span> </a> </li>
-          <li> <a href="#"><img src="img/search.svg" alt=""><span>Cerca</span> </a>  </li>
-          <li> <a href="#"><img src="img/libreria.svg" alt=""> <span>Libreria</span></a>  </li>
+    <aside>
+      <div class="logo">
+        <a href="#"><img src="img/logo.svg" alt=""></a>
+      </div>
+
+      <ul class="menu">
+        <li> <a href="#"><img src="img/home.svg" alt=""><span>Home</span> </a> </li>
+        <li> <a href="#"><img src="img/search.svg" alt=""><span>Cerca</span> </a>  </li>
+        <li> <a href="#"><img src="img/libreria.svg" alt=""> <span>Libreria</span></a>  </li>
+      </ul>
+
+      <div class="playlist">
+        <h4>PLAYLIST</h4>
+
+        <form action="index.html" method="post">
+          <button type="button" name="button"><span id="plus">&plus;</span><span class="text">Crea playlist</span></button>
+        </form>
+
+        <ul class="lista-nomi">
+          <li> <a href="#">Nome playlist</a></li>
+          <li> <a href="#">Nome playlist</a></li>
+          <li> <a href="#">Nome playlist</a></li>
+          <li> <a href="#">Nome playlist</a></li>
+          <li> <a href="#">Nome playlist</a></li>
+          <li> <a href="#">Nome playlist</a></li>
         </ul>
 
-        <div class="playlist">
-          <h4>PLAYLIST</h4>
-
-          <form action="index.html" method="post">
-            <button type="button" name="button"><span id="plus">&plus;</span><span class="text">Crea playlist</span></button>
-          </form>
-
-          <ul class="lista-nomi">
-            <li> <a href="#">Nome playlist</a></li>
-            <li> <a href="#">Nome playlist</a></li>
-            <li> <a href="#">Nome playlist</a></li>
-            <li> <a href="#">Nome playlist</a></li>
-            <li> <a href="#">Nome playlist</a></li>
-            <li> <a href="#">Nome playlist</a></li>
-          </ul>
-
-          <div class="app">
-            <div class="download">
-              <a href="#"><img src="img/download.svg" alt=""> Installa app</a>
-            </div>
-            <hr>
-            <div class="profile">
-              <a href="#"><img src="img/profile.svg" alt=""> John Doe</a>
-            </div>
+        <div class="app">
+          <div class="download">
+            <a href="#"><img src="img/download.svg" alt=""> Installa app</a>
           </div>
-
+          <hr>
+          <div class="profile">
+            <a href="#"><img src="img/profile.svg" alt=""> John Doe</a>
+          </div>
         </div>
 
+      </div>
 
-      </aside>
 
-      <section id="upgrade-bar">
-        <a href="#">EFFETTUA L&apos;UPGRADE</a>
-      </section>
+    </aside>
 
-      <section id="page">
+    <section id="upgrade-bar">
+      <a href="#">EFFETTUA L&apos;UPGRADE</a>
+    </section>
+
+
+    <section id="page">
 
         <ul class="menu">
           <li> <a href="#">IN EVIDENZA</a> </li>
@@ -79,6 +80,7 @@
             <div class="subtitle">
               Subtitle
             </div>
+            <a class="play" href="#"><i class="far fa-play-circle"></i></a>
           </div>
 
           <div class="contentuto">
@@ -91,6 +93,7 @@
             <div class="subtitle">
                Kile Dixon &amp; Michael Stein
             </div>
+            <a class="play" href="#"><i class="far fa-play-circle"></i></a>
           </div>
 
           <div class="contentuto">
@@ -103,6 +106,7 @@
             <div class="subtitle">
               Subtitle
             </div>
+            <a class="play" href="#"><i class="far fa-play-circle"></i></a>
           </div>
 
           <div class="contentuto">
@@ -115,6 +119,7 @@
             <div class="subtitle">
               Subtitle
             </div>
+            <a class="play" href="#"><i class="far fa-play-circle"></i></a>
           </div>
 
           <div class="contentuto">
@@ -127,6 +132,7 @@
             <div class="subtitle">
               Subtitle
             </div>
+            <a class="play" href="#"><i class="far fa-play-circle"></i></a>
           </div>
 
           <div class="contentuto">
@@ -139,6 +145,7 @@
             <div class="subtitle">
               Subtitle
             </div>
+            <a class="play" href="#"><i class="far fa-play-circle"></i></a>
           </div>
 
         </div>
@@ -160,6 +167,7 @@
             <div class="subtitle">
               Subtitle
             </div>
+            <a class="play" href="#"><i class="far fa-play-circle"></i></a>
           </div>
 
           <div class="contentuto">
@@ -172,6 +180,7 @@
             <div class="subtitle">
               Subtitle
             </div>
+            <a class="play" href="#"><i class="far fa-play-circle"></i></a>
           </div>
 
 
@@ -192,6 +201,7 @@
             <div class="subtitle">
               Subtitle
             </div>
+            <a class="play" href="#"><i class="far fa-play-circle"></i></a>
           </div>
 
           <div class="contentuto">
@@ -204,15 +214,59 @@
             <div class="subtitle">
               Subtitle
             </div>
+            <a class="play" href="#"><i class="far fa-play-circle"></i></a>
           </div>
 
         </div>
 
       </section>
 
-    </div>
 
-    <footer></footer>
+    <footer>
+      <div class="brano">
+        <div class="img">
+          <img src="img/sinister.jpeg" alt="">
+        </div>
+        <a class="titolo-brano"href="#">Sinister <br><span>Brano Nome</span></a>
+        <div class="icone-brano">
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
+        </div>
+      </div>
+
+      <div class="control-music">
+        <form class="icone-control">
+          <button type="button" name="button"><i class="fas fa-random"></i></button>
+          <button type="button" name="button"><i class="fas fa-step-backward"></i></button>
+          <button type="button" name="button"><i id="play" class="far fa-play-circle"></i></button>
+          <button type="button" name="button"><i class="fas fa-step-forward"></i></button>
+          <button type="button" name="button"><i class="fas fa-redo-alt"></i></button>
+        </form>
+        <div class="linea-music">
+          <div class="linea-music-white">
+
+          </div>
+          <div class="linea-music-grey">
+
+          </div>
+        </div>
+
+
+      </div>
+      <div class="utility">
+        <form class="icone-utility">
+          <button type="button" name="button"><i class="fas fa-bars"></i></button>
+          <button type="button" name="button"><i class="fas fa-tv"></i></button>
+          <button type="button" name="button"><i class="fas fa-volume-up"></i></button>  
+        </form>
+        <div class="linea-utility-white">
+
+        </div>
+        <div class="linea-utility-grey">
+
+        </div>
+      </div>
+    </footer>
 
   </body>
 </html>
