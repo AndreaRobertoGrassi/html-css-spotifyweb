@@ -475,3 +475,8 @@ body{
     width: 30px;
   }
 }
+@media all and (max-height:540px){
+  .app{
+    display: none;
+  }
+}
