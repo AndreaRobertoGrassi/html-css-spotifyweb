@@ -79,8 +79,6 @@ body{
 #left-bar .lista-nomi{
   display: flex;
   flex-direction: column;
-  height: 130px;
-  overflow:auto;
 }
 #left-bar .lista-nomi li{
   list-style: none;
@@ -475,8 +473,16 @@ body{
     width: 30px;
   }
 }
-@media all and (max-height:540px){
-  .app{
+
+@media all and (max-height:650px){
+  #left-bar .lista-nomi{
+    height: 200px;
+    overflow: auto;
+  }
+}
+
+@media all and (max-height:550px){
+  #left-bar .app{
     display: none;
   }
 }
